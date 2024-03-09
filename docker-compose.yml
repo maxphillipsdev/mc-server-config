@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - "25565:25565"
+      - "8100:8100"
+      - "24454:24454"
+    environment:
+      EULA: "true"
+      TYPE: PAPER
+      VERSION: 1.20.4
+      MEMORY: 8G
+      MODRINTH_PROJECTS:
+        - "coreprotect"
+        - "simple-voice-chat"
+        - "discordsrv"
+        - "tabtps"
+        - "bluemap"
+        - "terralith"
+      MODRINTH_ALLOWED_VERSION_TYPE: "release"
+    volumes:
+      - ./data:/data
