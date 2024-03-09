@@ -13,7 +13,6 @@ services:
       VERSION: 1.20.4
       MEMORY: 8G
       MODRINTH_PROJECTS: |
-        coreprotect
         simple-voice-chat
         discordsrv
         tabtps
