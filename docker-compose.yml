@@ -13,4 +13,4 @@ services:
       MODRINTH_MODPACK: /packs/pack.mrpack
     volumes:
       - ./data:/data
-      - ./packs:/packs
+      - /packs:/packs
