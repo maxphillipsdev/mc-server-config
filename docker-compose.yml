@@ -10,7 +10,7 @@ services:
       EULA: "true"
       MOD_PLATFORM: MODRINTH
       MEMORY: 8G
-      MODRINTH_MODPACK: ./packs/pack.mrpack
+      MODRINTH_MODPACK: /packs/pack.mrpack
     volumes:
       - ./data:/data
       - ./packs:/packs
