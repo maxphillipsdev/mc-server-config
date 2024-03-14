@@ -5,18 +5,12 @@ services:
     image: itzg/minecraft-server
     ports:
       - "25565:25565"
-      - "8100:8100"
       - "24454:24454"
     environment:
       EULA: "true"
-      TYPE: PAPER
-      VERSION: 1.20.4
+      MOD_PLATFORM: MODRINTH
       MEMORY: 8G
-      MODRINTH_PROJECTS: |
-        simple-voice-chat
-        discordsrv
-        tabtps
-        bluemap
-      MODRINTH_ALLOWED_VERSION_TYPE: "release"
+      MODRINTH_MODPACK: ./packs/pack.mrpack
     volumes:
       - ./data:/data
+      - ./packs:/packs
